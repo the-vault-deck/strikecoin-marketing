@@ -25,7 +25,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 24px;
+  padding: 24px 32px;
   z-index: 100;
 }
 
@@ -35,8 +35,8 @@ body {
 }
 
 .nav-logo img {
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   display: block;
 }
 
