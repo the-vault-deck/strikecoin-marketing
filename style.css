@@ -9,6 +9,7 @@
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,27 @@ body {
   color: #000000;
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.6;
+}
+
+/* GLOBAL NAV — PATCH 1A */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 24px;
+  z-index: 100;
+}
+
+.nav-logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+.nav-logo img {
+  width: 36px;
+  height: 36px;
+  display: block;
 }
 
 /* SECTION RHYTHM */
@@ -97,6 +119,55 @@ body {
   margin-bottom: 0;
 }
 
+/* TERMINAL BLOCK — PATCH 4 */
+.terminal-block {
+  font-family: 'Courier New', Courier, monospace;
+  background: #000000;
+  color: #FFFFFF;
+  padding: 12px;
+  border: 2px solid #000000;
+  margin-top: 16px;
+}
+
+.terminal-block p {
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.terminal-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* FORENSIC CHAIN — PATCH 2 */
+.section--chain {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.chain {
+  display: flex;
+  gap: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chain-node {
+  border: 2px solid #000000;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.chain-arrow {
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /* INACTION VISIBILITY */
 .section--inaction {
   text-align: center;
@@ -120,31 +191,34 @@ body {
   margin-bottom: 0;
 }
 
+/* SIGNAL TEXT — PATCH 3B */
+.signal-text {
+  color: #FF3B30;
+}
+
 /* TERMINAL ACTION */
 .section--terminal {
   text-align: center;
   padding: 80px 24px;
 }
 
+/* CTA — PATCH 3A */
 .cta {
   display: inline-block;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #E0E0E0;
-  background: #000000;
-  border: 2px solid #000000;
+  color: #FFFFFF;
+  background: #FF3B30;
+  border: 2px solid #FF3B30;
   padding: 18px 48px;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
 }
 
 .cta:hover {
-  background: #FF3B30;
-  border-color: #FF3B30;
-  color: #E0E0E0;
+  opacity: 0.85;
 }
 
 /* RESPONSIVE */
@@ -160,5 +234,14 @@ body {
   .cta {
     padding: 16px 32px;
     font-size: 0.8rem;
+  }
+
+  .chain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chain-arrow {
+    transform: rotate(90deg);
   }
 }

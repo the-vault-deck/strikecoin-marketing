@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer hexagon -->
+  <polygon points="100,10 180,55 180,145 100,190 20,145 20,55" fill="none" stroke="#000" stroke-width="12"/>
+  <!-- Vertical bar top -->
+  <rect x="88" y="30" width="24" height="50" fill="#000"/>
+  <!-- Vertical bar bottom -->
+  <rect x="88" y="120" width="24" height="50" fill="#000"/>
+  <!-- Left arrow arm -->
+  <polygon points="40,100 80,75 80,90 60,100 80,110 80,125" fill="#000"/>
+  <!-- Right arrow arm -->
+  <polygon points="160,100 120,75 120,90 140,100 120,110 120,125" fill="#000"/>
+  <!-- Red strike (X mark) -->
+  <line x1="70" y1="78" x2="130" y2="122" stroke="#FF3B30" stroke-width="8" stroke-linecap="square"/>
+  <line x1="130" y1="78" x2="70" y2="122" stroke="#FF3B30" stroke-width="8" stroke-linecap="square"/>
+</svg>
