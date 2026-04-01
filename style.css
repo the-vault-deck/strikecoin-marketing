@@ -1,0 +1,164 @@
+/* RESET */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #E0E0E0;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+}
+
+/* SECTION RHYTHM */
+.section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  border-bottom: 2px solid #000000;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+/* SYSTEM HEADER */
+.section--header {
+  padding-top: 96px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.section--header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1.2;
+}
+
+.section--header .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  margin-top: 16px;
+}
+
+/* SYSTEM DEFINITION */
+.section--definition p {
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+.section--definition p:last-child {
+  margin-bottom: 0;
+}
+
+/* MODULE OVERVIEW */
+.section--modules {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.module {
+  border: 2px solid #000000;
+  padding: 32px 24px;
+  margin-bottom: 24px;
+}
+
+.module:last-child {
+  margin-bottom: 0;
+}
+
+.module h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 12px;
+}
+
+.module p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.module p:last-child {
+  margin-bottom: 0;
+}
+
+/* INACTION VISIBILITY */
+.section--inaction {
+  text-align: center;
+}
+
+.section--inaction h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 32px;
+  color: #FF3B30;
+}
+
+.section--inaction p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.section--inaction p:last-child {
+  margin-bottom: 0;
+}
+
+/* TERMINAL ACTION */
+.section--terminal {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.cta {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #E0E0E0;
+  background: #000000;
+  border: 2px solid #000000;
+  padding: 18px 48px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.cta:hover {
+  background: #FF3B30;
+  border-color: #FF3B30;
+  color: #E0E0E0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .section--header h1 {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 48px 16px;
+  }
+
+  .cta {
+    padding: 16px 32px;
+    font-size: 0.8rem;
+  }
+}
